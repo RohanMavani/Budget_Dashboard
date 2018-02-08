@@ -1,0 +1,194 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>Material Design Lite</title>
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+
+
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+
+  <meta name="msapplication-TileColor" content="#3372DF">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="budjet.css">
+</head>
+
+<body>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">Budget</span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+        <!-- Navigation. We hide it in small screens. -->
+        <nav class="mdl-navigation mdl-layout--large-screen-only">
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                Sign Out
+          </button>
+
+        </nav>
+      </div>
+    </header>
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title">Budget</span>
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+        <label class="mdl-button mdl-js-button mdl-button--icon" for="expando1">
+      <i class="material-icons">search</i>
+    </label>
+        <div class="mdl-textfield__expandable-holder">
+          <input class="mdl-textfield__input" type="text" id="expando1">
+          <label class="mdl-textfield__label" for="expando1">Expandable text field</label>
+        </div>
+      </div>
+      <nav class="mdl-navigation">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+                  <i class="fa fa-home" aria-hidden="true"></i>
+                  Dashboard <span class="sr-only">(current)</span>
+                </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+                  <i class="fa fa-user" aria-hidden="true"></i>
+                Profile
+                </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+                  <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                  Reports
+                </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" class="waves-effect">
+                  <i class="fa fa-table" aria-hidden="true"></i> Basic Table
+                </a>
+          </li>
+        </ul>
+
+        <h5 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span>Saved reports</span>
+              <a class="d-flex align-items-center text-muted" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus-circle"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+              </a>
+            </h5>
+        <ul class="nav flex-column mb-2">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+                  <i class="fa fa-calendar" aria-hidden="true"></i>
+                  Current month
+                </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+                  <i class="fa fa-calendar" aria-hidden="true"></i>
+                  Last quarter
+                </a>
+          </li>
+
+        </ul>
+      </nav>
+    </div>
+    <main class="mdl-layout__content">
+      <div class="page-content">
+        <!-- 1st row -->
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone mdl-cell--4-col-tablet">
+            <!-- Main card with all the info -->
+            <div class="card-content" style="background-color: #273c75;">
+                    <div class="card-body">
+                        <div class="media d-flex">
+                          <div class="align-self-center">
+                              <img src="budget.png" />
+                          </div>
+                            <div class="media-body text-right">
+                                <h3>278</h3>
+                                <span style="font-size:16px;">Total Budget</span>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+          </div>
+          <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone mdl-cell--4-col-tablet">
+            <!-- income -->
+            <div class="card-content" style="background-color:#05c46b">
+                    <div class="card-body">
+                        <div class="media d-flex">
+                            <div class="align-self-center">
+                                <i class="icon-pencil primary font-large-2 float-left"></i>
+                            </div>
+                            <div class="media-body text-right">
+                                <h3 class="income">278</h3>
+                                <span style="font-size:16px;">Income</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+          </div>
+          <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone mdl-cell--4-col-tablet">
+            <!-- expense -->
+            <div class="card-content" style="background-color:#e74c3c">
+                    <div class="card-body">
+                        <div class="media d-flex">
+                            <div class="align-self-center">
+                                <i class="icon-pencil primary font-large-2 float-left"></i>
+                            </div>
+                            <div class="media-body text-right">
+                                <h3 class="expense">278</h3>
+                                <span style="font-size:16px;">Expense</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+          </div>
+          <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone mdl-cell--4-col-tablet">
+            <!-- email -->
+            <div class="card-content">
+                    <div class="card-body">
+                        <div class="media d-flex">
+                            <div class="align-self-center">
+                                <i class="icon-pencil primary font-large-2 float-left"></i>
+                            </div>
+                            <div class="media-body text-right">
+                                <h3>278</h3>
+                                <span>New Posts</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+</html>

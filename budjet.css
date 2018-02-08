@@ -1,0 +1,284 @@
+html, body {
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+  background-color: #F5F5F5;
+}
+
+.demo-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+}
+
+.demo-layout .mdl-layout__header .mdl-layout__drawer-button {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.mdl-layout__drawer .avatar {
+  margin-bottom: 16px;
+}
+
+.demo-drawer {
+  border: none;
+}
+
+/* iOS Safari specific workaround */
+
+.demo-drawer .mdl-menu__container {
+  z-index: -1;
+}
+
+.demo-drawer .demo-navigation {
+  z-index: -2;
+}
+
+/* END iOS Safari specific workaround */
+
+.demo-drawer .mdl-menu .mdl-menu__item {
+  display: flex;
+  align-items: center;
+}
+
+.demo-drawer-header {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 16px;
+  height: 151px;
+}
+
+.demo-avatar-dropdown {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.demo-navigation {
+  flex-grow: 1;
+}
+
+.demo-layout .demo-navigation .mdl-navigation__link {
+  display: flex !important;
+  flex-direction: row;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.56);
+  font-weight: 500;
+}
+
+.demo-layout .demo-navigation .mdl-navigation__link:hover {
+  background-color: #00BCD4;
+  color: #37474F;
+}
+
+.demo-navigation .mdl-navigation__link .material-icons {
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.56);
+  margin-right: 32px;
+}
+
+.demo-content {
+  max-width: 1080px;
+}
+
+.demo-charts {
+  align-items: center;
+}
+
+.demo-chart:nth-child(1) {
+  color: #ACEC00;
+}
+
+.demo-chart:nth-child(2) {
+  color: #00BBD6;
+}
+
+.demo-chart:nth-child(3) {
+  color: #BA65C9;
+}
+
+.demo-chart:nth-child(4) {
+  color: #EF3C79;
+}
+
+.demo-graphs {
+  padding: 16px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+/* TODO: Find a proper solution to have the graphs
+ * not float around outside their container in IE10/11.
+ * Using a browserhacks.com solution for now.
+ */
+
+_:-ms-input-placeholder, :root .demo-graphs {
+  min-height: 664px;
+}
+
+_:-ms-input-placeholder, :root .demo-graph {
+  max-height: 300px;
+}
+
+/* TODO end */
+
+.demo-graph:nth-child(1) {
+  color: #00b9d8;
+}
+
+.demo-graph:nth-child(2) {
+  color: #d9006e;
+}
+
+.demo-cards {
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.demo-cards .demo-separator {
+  height: 32px;
+}
+
+.demo-cards .mdl-card__title.mdl-card__title {
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.demo-cards ul {
+  padding: 0;
+}
+
+.demo-cards h3 {
+  font-size: 1em;
+}
+
+.demo-updates .mdl-card__title {
+  min-height: 200px;
+  background-image: url('images/dog.png');
+  background-position: 90% 100%;
+  background-repeat: no-repeat;
+}
+
+.demo-cards .mdl-card__actions a {
+  color: #00BCD4;
+  text-decoration: none;
+}
+
+.demo-options h3 {
+  margin: 0;
+}
+
+.demo-options .mdl-checkbox__box-outline {
+  border-color: rgba(255, 255, 255, 0.89);
+}
+
+.demo-options ul {
+  margin: 0;
+  list-style-type: none;
+}
+
+.demo-options li {
+  margin: 4px 0;
+}
+
+.demo-options .material-icons {
+  color: rgba(255, 255, 255, 0.89);
+}
+
+.demo-options .mdl-card__actions {
+  height: 64px;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.mdl-layout__header {
+  background-color: #2d3436;
+}
+
+.mdl-button--accent.mdl-button--accent.mdl-button--raised, .mdl-button--accent.mdl-button--accent.mdl-button--fab {
+  color: rgb(255, 255, 255);
+  background-color: #636e72;
+}
+
+.nav-link .feather {
+  margin-right: 4px;
+  color: #999;
+}
+
+.nav-link.active {
+  color: #007bff;
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+  text-transform: uppercase;
+}
+
+/*
+ * Navbar
+ */
+
+.navbar-brand {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, .25);
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+}
+
+.form-control {
+  padding: .75rem 1rem;
+  border-width: 0;
+  border-radius: 0;
+}
+
+.fa {
+  margin-right: 25px;
+  margin-left: 10px;
+  width: 16px;
+  height: 16px;
+  font-size: 18px;
+}
+
+.mdl-layout__drawer>.mdl-layout__title, .mdl-layout__drawer>.mdl-layout-title {
+  line-height: 64px;
+  text-align: center;
+  padding-left: 0px;
+  background-color: #2D3436;
+  color: white;
+}
+
+.feather {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-bottom;
+}
+
+.nav-link {
+  font-weight: bold;
+  color: #494E53;
+}
+
+.nav-link:hover .fa, .nav-link:hover {
+  color: #2d3436;
+}
+
+/* first row*/
+
+.card-content {
+  color: white;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.text-right {
+    text-align: right !important;
+}
